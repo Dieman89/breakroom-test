@@ -27,7 +27,7 @@ defmodule Ex do
          {:ok, worked_hours} <- Map.fetch(map, "hours_actually_worked") do
       additional_hours = abs(contracted_hours - worked_hours)
 
-      if additional_hours >= 8 do
+      if additional_hours >= 9 do
         %Ex.Score{current_score | total: current_score.total + 1}
       else
         %Ex.Score{
