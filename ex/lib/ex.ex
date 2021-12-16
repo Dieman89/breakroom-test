@@ -21,6 +21,7 @@ defmodule Ex do
     |> score_by_key(data, "good_for_carers")
     |> score_by_key(data, "unpaid_extra_work")
     |> check_hourly_rate(data)
+    |> format_text
   end
 
   @doc """
@@ -152,5 +153,22 @@ defmodule Ex do
         current_score
       end
     end
+  end
+
+  @doc """
+  Takes an Ex.Score struct and returns a formatted string.
+
+
+  ## Examples
+
+
+      iex> score = %Ex.Score{points: 3, total: 5}
+      %Ex.Score{points: 3, total: 5}
+      iex> Ex.format_text(score)
+      "You scored 3 out of 5 (60.0%)."
+
+  """
+  def format_text(%Ex.Score{} = current_score) do
+    "You scored #{current_score.points} out of #{current_score.total} (#{current_score.points / current_score.total * 100}%)."
   end
 end
