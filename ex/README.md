@@ -1,21 +1,16 @@
-# Ex
+![KaPI is the gateway in and out of Orion systems](https://cdn.breakroom.cc/images/breakroom-logo--social-sharing-4adb0ee71378a289a052098a125c7e9e.png)
 
-**TODO: Add description**
+<p align="center"><b>Welcome!</b> 👐️</p>
 
-## Installation
+## Setup
 
-If [available in Hex](https://hex.pm/docs/publish), the package can be installed
-by adding `ex` to your list of dependencies in `mix.exs`:
+- Install dependancies: `mix deps.get`
 
-```elixir
-def deps do
-  [
-    {:ex, "~> 0.1.0"}
-  ]
-end
-```
+## How to Run
 
-Documentation can be generated with [ExDoc](https://github.com/elixir-lang/ex_doc)
-and published on [HexDocs](https://hexdocs.pm). Once published, the docs can
-be found at [https://hexdocs.pm/ex](https://hexdocs.pm/ex).
+- Enter interactive mode: `iex -S mix`
+- Execute the main function: `Ex.main("answers.json")`
 
+## Tests
+
+## Documentation
