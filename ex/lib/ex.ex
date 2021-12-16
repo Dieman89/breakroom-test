@@ -6,7 +6,7 @@ defmodule Ex do
 
 
       iex> Ex.main("answers.json")
-      %Ex.Score{points: 3, total: 5}
+      "You scored 3 out of 5 (60.0%)."
 
   """
   def main(filename) do
@@ -157,7 +157,6 @@ defmodule Ex do
 
   @doc """
   Takes an Ex.Score struct and returns a formatted string.
-
 
   ## Examples
 
