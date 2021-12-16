@@ -150,7 +150,10 @@ defmodule Ex do
             total: current_score.total + 1
         }
       else
-        current_score
+        %Ex.Score{
+          current_score
+          | total: current_score.total + 1
+        }
       end
     end
   end
