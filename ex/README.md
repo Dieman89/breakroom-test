@@ -21,3 +21,6 @@
 - To run tests: `mix test`
 
 ## Documentation
+
+- Generate documentation: `mix docs`
+- Open it from root: `open doc/Ex.html`
