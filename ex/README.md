@@ -18,4 +18,6 @@
 
 ## Tests
 
+- To run tests: `mix test`
+
 ## Documentation
