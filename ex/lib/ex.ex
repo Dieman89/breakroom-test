@@ -1,4 +1,5 @@
 defmodule Ex do
+  @moduledoc false
   @doc """
   Take a JSON and generate a score based on key-value pairs.
 
